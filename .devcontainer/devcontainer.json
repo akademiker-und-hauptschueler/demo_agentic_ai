@@ -1,0 +1,27 @@
+{
+    "name": "Marp-devcontainer",
+  
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+  
+    "features": {},
+  
+    "customizations": {
+      "vscode": {
+        "extensions": [
+          "marp-team.marp-vscode",
+          "davidanson.vscode-markdownlint",
+          "yzhang.markdown-all-in-one"
+        ],
+        "settings": {
+          "markdown.preview.fontSize": 16,
+          "marp.preview.autoRefresh": true
+        }
+      }
+    },
+  
+    "postCreateCommand": "cd presentation && npm install && npm audit fix --force",
+  
+    "remoteUser": "root"
+  }
