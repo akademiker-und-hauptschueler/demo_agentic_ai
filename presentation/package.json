@@ -1,0 +1,13 @@
+{
+    "name": "agentic-ai-marp",
+    "private": true,
+    "type": "module",
+    "devDependencies": {
+        "@marp-team/marp-cli": "^4.2.3"
+    },
+    "scripts": {
+        "preview": "marp slides --watch",
+        "build:pdf": "marp slides -o dist/lecture.pdf",
+        "build:html": "marp slides --html -o dist/"
+    }
+}
