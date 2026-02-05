@@ -1,0 +1,52 @@
+# Dependencies
+node_modules/
+
+# Build and output
+dist/
+build/
+out/
+.next/
+*.tsbuildinfo
+
+# Logs and temp
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.tmp/
+tmp/
+temp/
+.cache/
+
+
+# OS
+.DS_Store
+.DS_Store?
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# IDE / Editor
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.classpath
+.settings/
+
+# Marp / presentation build output (if you export slides)
+presentation/dist/
+presentation/*.pdf
+presentation/*.html
+
+# Misc
+*.bak
+*.orig
+.npm
+.yarn-integrity
+.pnp.*
+.eslintcache
+.prettierignore
