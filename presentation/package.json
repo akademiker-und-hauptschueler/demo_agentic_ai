@@ -7,7 +7,7 @@
     },
     "scripts": {
         "preview": "marp slides --watch",
-        "build:pdf": "marp slides -o dist/lecture.pdf",
-        "build:html": "marp slides --html -o dist/"
+        "build:pdf": "marp slides -o dist/presentation.pdf",
+        "build:html": "marp slides --html -o dist/presentation.html"
     }
 }

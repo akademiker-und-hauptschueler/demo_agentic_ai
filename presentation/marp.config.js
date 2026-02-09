@@ -1,5 +1,5 @@
 export default {
-    theme: "theme/he-lecture.css",
+    theme: "theme/theme.css",
     html: true,
     pdf: true,
     allowLocalFiles: true
