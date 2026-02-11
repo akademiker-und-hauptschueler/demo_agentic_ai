@@ -94,6 +94,9 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
   <div class="roadmap-narrative">
     <p class="roadmap-step"><strong>Einordnung</strong> – Von klassischer KI über LLMs zu Agenten und agentischen Systemen.</p>
     <p class="roadmap-step"><strong>Tool-Landschaft</strong> – Wo kann ich welches Tool nutzen und welche Risiken gibt es?</p>
+    <p class="roadmap-step"><strong>KI als Mitarbeiter</strong> – Vom Konzept zum praktischen Einsatz im Alltag.</p>
+    <p class="roadmap-step"><strong>Live-Demo</strong> – Multi-Agenten-System in Aktion erleben.</p>
+    <p class="roadmap-step"><strong>Risiken &amp; Ausblick</strong> – Leitplanken setzen und Zukunft einordnen.</p>
   </div>
 </div>
 <div class="roadmap-slide-figure">
@@ -102,7 +105,7 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
 
 ---
 
-<!-- _class: section-slide section-slide-einordnung -->
+<!-- _class: section-slide section-slide-einordnung section-slide-demo-bright -->
 
 <img class="section-slide-bg" src="../assets/einordnung.jpg" alt="" />
 <div class="section-slide-content">
@@ -195,7 +198,7 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
   <p class="concept-slide-analogy"><strong>Einordnung:</strong> Basis für alles Weitere – KI als Oberbegriff, LLMs und Agenten als konkrete Ausprägungen.</p>
 </div>
 <div class="concept-slide-figure">
-  <div class="concept-slide-placeholder">Abbildung: KI (z. B. Basisfähigkeiten)</div>
+  <img src="../assets/concept-ki.svg" alt="KI als Oberbegriff: Sprache verstehen, Entscheidungen treffen, Muster erkennen" />
 </div>
 
 ---
@@ -212,10 +215,10 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
     <li>Handelt <strong>nicht</strong> selbstständig</li>
     <li>Besitzt kein dauerhaftes Gedächtnis</li>
   </ul>
-  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein sehr gut ausgebildeter Praktikant, der nur arbeitet, wenn man ihn direkt anspricht.</p>
+  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein sehr gut ausgebildeter Praktikant – liefert top Ergebnisse, aber nur wenn man ihn direkt anspricht. Ohne Anweisung passiert nichts.</p>
 </div>
 <div class="concept-slide-figure">
-  <div class="concept-slide-placeholder">Abbildung: LLM (z. B. Sprachmodell)</div>
+  <img src="../assets/concept-llm.svg" alt="LLM: Prompt rein, Antwort raus – reaktiv, kein Gedächtnis, kein eigenes Ziel" />
 </div>
 
 ---
@@ -233,10 +236,10 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
     <li>Handelt eigenständig</li>
     <li>Nutzt Werkzeuge (LLM, Suche, Dateien …)</li>
   </ul>
-  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein Mitarbeiter mit klarer Aufgabe.</p>
+  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein Mitarbeiter mit klarer Aufgabe – geht eigenständig los, nutzt Werkzeuge und liefert Ergebnisse.</p>
 </div>
 <div class="concept-slide-figure">
-  <div class="concept-slide-placeholder">Abbildung: Agent (z. B. Assistent)</div>
+  <img src="../assets/concept-agent.svg" alt="Agent: Ziel → Wahrnehmen → Planen → Handeln (Loop), nutzt Werkzeuge" />
 </div>
 
 ---
@@ -252,10 +255,10 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
     <li>Koordination untereinander</li>
     <li>Gemeinsames Ziel</li>
   </ul>
-  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein Unternehmen mit Arbeitsteilung, Rollen und Kontrollmechanismen.</p>
+  <p class="concept-slide-analogy"><strong>Analogie:</strong> Ein Unternehmen mit Arbeitsteilung – jeder Agent hat seine Rolle, zusammen liefern sie das Ergebnis.</p>
 </div>
 <div class="concept-slide-figure">
-  <div class="concept-slide-placeholder">Abbildung: Agentische KI (z. B. Team)</div>
+  <img src="../assets/concept-agentic.svg" alt="Agentische KI: Koordinator delegiert an spezialisierte Agenten, gemeinsames Ergebnis" />
 </div>
 
 ---
@@ -264,11 +267,13 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
 
 <img class="section-slide-bg" src="../assets/einordnung.jpg" alt="" />
 <div class="section-slide-content">
-  <h1 class="section-slide-title">Quo vadis</h1>
-  <p class="section-slide-subtitle">Welche Tools gibt es?</p>
+  <h1 class="section-slide-title">Status Quo</h1>
+  <p class="section-slide-subtitle">Einordnung der Tools</p>
 </div>
 
 ---
+
+<!-- _class: tool-overview-slide -->
 
 # Tool-Landschaft: Überblick
 
@@ -277,6 +282,7 @@ footer: "© 2026 Dennis Grewe | Martin Jäger · Der Akademiker und der Hauptsch
 | 1 | Browser (Perplexity Comet, OpenAI Atlas) | Gering | Gering |
 | 2 | Coding Tools (Cursor, Google Antigravity) | Mittel | Mittel |
 | 3 | Coding Agents (Gemini CLI, Anthropic Claude Code, Cursor) | Hoch | Mittel–hoch |
+| 3.5 | Coding Agent Orchestration (Anthropic Claude Code Teams, Google Antigravity Agent Manager, OpenAI Agent Builder) | Hoch | Mittel–hoch |
 | 4 | "Lokale" Agenten (Anthropic Claude Cowork) | Hoch | Hoch |
 | 5 | Vollständig Autonomer Agent (z.B.: OpenClaw) | Sehr hoch | Sehr hoch |
 
@@ -298,7 +304,7 @@ In dieser Session zeigen wir euch Beispiele für die einzelnen Stufen
   <div class="tool-stage-hands-on">Hands-on: KI als Social-Media-Manager nutzen</div>
 </div>
 <div class="tool-stage-figure">
-  <div class="tool-stage-placeholder">Abbildung / Screenshot: Browser-Tool (z. B. Comet, Atlas)</div>
+  <img src="../assets/comet.png" alt="Screenshot: Perplexity Comet" />
 </div>
 
 ---
@@ -317,7 +323,7 @@ In dieser Session zeigen wir euch Beispiele für die einzelnen Stufen
   <div class="tool-stage-hands-on">Hands-on: IDE mit KI-Assistent nutzen</div>
 </div>
 <div class="tool-stage-figure">
-  <div class="tool-stage-placeholder">Abbildung / Screenshot: IDE (z. B. Cursor, Antigravity)</div>
+  <img src="../assets/cursor.png" alt="Screenshot: Cursor IDE" />
 </div>
 
 ---
@@ -332,11 +338,12 @@ In dieser Session zeigen wir euch Beispiele für die einzelnen Stufen
     <li>Höhere Autonomie: Refaktorierung, Implementierung, Debugging</li>
     <li>Kontrolle durch Terminal, Versionierung, Freigabe</li>
   </ul>
-  <p class="tool-stage-risks">Risiken: Zugriff auf Quellcode; Datenschutz bei Cloud-Backends.</p>
+  <p class="tool-stage-risks"><strong>Orchestrierung</strong>: Steuerung von Agenten mittels Tools (z.B.: Claude Code Teams)</p>
+  <p class="tool-stage-risks"><strong>Risiken</strong>: Zugriff auf Dateisystem,Quellcode; Datenschutz bei Cloud-Backends.</p>
   <div class="tool-stage-hands-on">Hands-on: Erstellung einer Web-Anwendung für AH</div>
 </div>
 <div class="tool-stage-figure">
-  <div class="tool-stage-placeholder">Abbildung / Screenshot: Terminal (z. B. Cursor, Claude Code)</div>
+  <img src="../assets/claude_code.png" alt="Screenshot: Claude Code" />
 </div>
 
 ---
@@ -347,17 +354,16 @@ In dieser Session zeigen wir euch Beispiele für die einzelnen Stufen
   <h1 class="tool-stage-title">Stufe 4: "Lokale" Agentensysteme</h1>
   <p class="tool-stage-examples">Beispiele: Claude Cowork</p>
   <ul class="tool-stage-list">
-    <li>Agent läuft <strong>lokal</strong>, Zugriff auf Anwendungen, Fenster, Kontext</li>
-    <li>Integration mit Sprachmodellen in der Cloud</li>
+    <li>Agent läuft <strong>lokal</strong>, Zugriff auf Anwendungen, Fenster, Kontext;</li>
+    <li>Integration mit Sprachmodellen aus der Cloud oder lokal</li>
     <li>Hohe Autonomie: wie ein „Mitarbeiter am Schreibtisch“</li>
-    <li>Illusion eines vollwertigen digitalen Mitarbeiters</li>
+    <li>"<strong>Illusion</strong>" eines vollwertigen digitalen Mitarbeiters</li>
+    <li>Kann <strong>auch ohne menschliche Intervention</strong> Aufgaben eigenständig erledigen</li>
   </ul>
-  <p class="tool-stage-risks">Risiken: Umfassender Zugriff auf lokale Daten; Data Leaks, Compliance.</p>
-  <div class="tool-stage-hands-on">Hands-on: > **Erstelle einen vollständigen, realistischen und verständlichen Reiseplan**  
-> inklusive Kostenübersicht und Management-Zusammenfassung.</div>
+  <p class="tool-stage-risks"><strong>Risiken</strong>: Umfassender, administrativer Zugriff auf alle Daten, Dienste, etc.</p>
 </div>
 <div class="tool-stage-figure">
-  <div class="tool-stage-placeholder">Abbildung / Screenshot: Lokaler Agent (z. B. Claude Cowork)</div>
+  <img src="../assets/claude_cowork.png" alt="Screenshot: Claude Cowork" />
 </div>
 
 ---
@@ -372,126 +378,162 @@ In dieser Session zeigen wir euch Beispiele für die einzelnen Stufen
     <li>Anbindung an Sprachmodelle in der Cloud oder lokal</li>
     <li>Kann als vollwertiger Ersatz für wiederkehrende Tätigkeiten gedacht werden</li>
     <li>Erledigt Aufgaben eigenständig <strong>ohne menschliche Intervention</strong></li>
-    <li><strong>Höchstes Risiko:</strong> Fehlverhalten trifft den Arbeitsplatz; Data Leaks, Abhängigkeit</li>
+    <li><strong>Höchstes Risiko:</strong> Fehlverhalten trifft den Arbeitsplatz; Data Leaks, Abhängigkeit, da Administrator-Rechte</li>
   </ul>
-  <p class="tool-stage-note">Kernbotschaft: Kein Tool mehr, sondern ein <strong>digitaler Kollege</strong> – Rollenklärung, Grenzen und Risikobewusstsein sind zentral.</p>
+  <p class="tool-stage-note"><strong>Kernbotschaft:</strong> Kein Tool mehr, sondern ein <strong>digitaler Kollege</strong> – Rollenklärung, Grenzen und Risikobewusstsein sind zentral.</p>
 </div>
 <div class="tool-stage-figure">
-  <div class="tool-stage-placeholder">Abbildung: OpenClaw (kein Hands-on in dieser Session)</div>
+  <img src="../assets/openclaw.png" alt="Screenshot: OpenClaw" />
 </div>
 
 ---
 
-# Tool-Landschaft: Überblick
+<!-- _class: section-slide section-slide-einordnung -->
 
-In dieser Session spannt sich der Bogen vom **praktischen Einstieg** bis zur **Live-Demo:**
-
-- **Einstieg:** Agentische KI im Browser – z. B. Social Media unterstützen, Recherche, erste Entwürfe. Geringe Autonomie, überschaubares Risiko.
-- **Heute live:** Ein **Multi-Agenten-System** übernimmt eine komplexe Aufgabe (Geschäftsreise planen): mehrere Agenten mit klaren Rollen arbeiten zusammen.
-
-Dazwischen stehen IDE, CLI und lokale Systeme – mehr Autonomie, mehr Möglichkeiten, aber auch mehr **Risiken** (Data Leaks, Kontrollverlust). Wir ordnen die Stufen kurz ein und erleben dann die Demo.
-
----
-
----
-
-# 5. KI als Mitarbeiter – Beispiel
-
-**Früher:** Ein Social-Media-Manager mit klaren Aufgaben (Posts erstellen, veröffentlichen, analysieren, optimieren, messen).
-
-**Heute:** Ein Agent kann das übernehmen – z. B. mit agentischer KI **im Browser** (Stufe 1): geringe Autonomie, überschaubares Risiko.
-
-*„Logge dich ein und lass uns gemeinsam einen Social-Media-Post erstellen.“*
-
----
-
-# 6. Demo-Szenario: Geschäftsreiseplanung
-
-Ein agentisches System plant eine **dreitägige Geschäftsreise nach Berlin**.
-
-**Das System soll:**
-- Reiseoptionen recherchieren  
-- Kosten kalkulieren  
-- Plausibilität prüfen  
-- Ergebnisse verständlich aufbereiten  
-
-**Warum dieses Szenario?** Alltagsnah, keine Fachkenntnisse nötig, typische Büro- und Managementprozesse.
-
----
-
-<!-- _class: multiagent-slide -->
-
-# Multi-Agenten-System: Geschäftsreiseplanung
-
-**Gesamtziel:** Vollständiger, realistischer Reiseplan inkl. Kostenübersicht und Management-Zusammenfassung.
-
-Mehrere **spezialisierte Agenten** arbeiten zusammen – wie in einem Team mit klaren Rollen.
-
-<div class="multiagent-diagram">
-  <svg class="multiagent-svg" viewBox="0 0 720 380" xmlns="http://www.w3.org/2000/svg" aria-labelledby="multiagent-title">
-    <title id="multiagent-title">Ablauf Multi-Agenten-System Geschäftsreiseplanung</title>
-    <!-- Goal -->
-    <rect x="260" y="8" width="200" height="36" rx="6" fill="#1A1A1A" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="360" y="30" text-anchor="middle" fill="#00E5FF" font-size="12" font-weight="600">Gesamtziel: Reiseplan + Kosten + Zusammenfassung</text>
-    <!-- Agent 1: Planung -->
-    <rect x="290" y="58" width="140" height="52" rx="6" fill="#1A1A1A" stroke="#FF1744" stroke-width="1.5"/>
-    <text x="360" y="78" text-anchor="middle" fill="#FF1744" font-size="11" font-weight="700">Agent 1: Planung &amp; Koordination</text>
-    <text x="360" y="94" text-anchor="middle" fill="#E0E0E0" font-size="9">Projektleitung · Ziel, Teilaufgaben, Beauftragung</text>
-    <!-- Arrow goal -> A1 -->
-    <path d="M 360 44 L 360 58" stroke="#00E5FF" stroke-width="1.5" fill="none"/>
-    <!-- Agents 2,3,4 -->
-    <rect x="40" y="128" width="160" height="48" rx="6" fill="#1A1A1A" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="120" y="148" text-anchor="middle" fill="#00E5FF" font-size="10" font-weight="600">Agent 2: Recherche</text>
-    <text x="120" y="162" text-anchor="middle" fill="#E0E0E0" font-size="8">Anreise, Hotel, Preisrahmen</text>
-    <rect x="280" y="128" width="160" height="48" rx="6" fill="#1A1A1A" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="360" y="148" text-anchor="middle" fill="#00E5FF" font-size="10" font-weight="600">Agent 3: Budget &amp; Kosten</text>
-    <text x="360" y="162" text-anchor="middle" fill="#E0E0E0" font-size="8">Kosten, Alternativen, Budget</text>
-    <rect x="520" y="128" width="160" height="48" rx="6" fill="#1A1A1A" stroke="#00E5FF" stroke-width="1.5"/>
-    <text x="600" y="148" text-anchor="middle" fill="#00E5FF" font-size="10" font-weight="600">Agent 4: Qualität &amp; Plausibilität</text>
-    <text x="600" y="162" text-anchor="middle" fill="#E0E0E0" font-size="8">Zeitpläne, Widersprüche prüfen</text>
-    <!-- Arrows A1 -> A2, A3, A4 -->
-    <path d="M 320 110 L 120 128" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <path d="M 360 110 L 360 128" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <path d="M 400 110 L 600 128" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <!-- Agent 5 -->
-    <rect x="240" y="198" width="240" height="52" rx="6" fill="#1A1A1A" stroke="#1DE9B6" stroke-width="1.5"/>
-    <text x="360" y="218" text-anchor="middle" fill="#1DE9B6" font-size="11" font-weight="700">Agent 5: Ergebnis &amp; Kommunikation</text>
-    <text x="360" y="234" text-anchor="middle" fill="#E0E0E0" font-size="9">Zusammenfassung, Darstellung, Entscheidungsvorlage</text>
-    <!-- Arrows A2,A3,A4 -> A5 -->
-    <path d="M 120 176 L 280 198" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <path d="M 360 176 L 360 198" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <path d="M 600 176 L 440 198" stroke="#2A2A2A" stroke-width="1.2" fill="none"/>
-    <!-- Output -->
-    <rect x="280" y="268" width="160" height="36" rx="6" fill="#2A2A2A" stroke="#1DE9B6" stroke-width="1.5"/>
-    <text x="360" y="290" text-anchor="middle" fill="#E0E0E0" font-size="10">Reiseplan + Entscheidungsvorlage</text>
-    <path d="M 360 250 L 360 268" stroke="#1DE9B6" stroke-width="1.2" fill="none"/>
-  </svg>
+<img class="section-slide-bg" src="../assets/planning.jpg" alt="" />
+<div class="section-slide-content">
+  <h1 class="section-slide-title">KI als Mitarbeiter</h1>
+  <p class="section-slide-subtitle">Vom Werkzeug zum Kollegen</p>
 </div>
 
 ---
 
-# 8. Technische Demo (CLI)
+# Beispiel: KI als Social-Media-Manager
 
-**Ziel:** Live zeigen, dass Agenten **rollenbasiert** arbeiten – ohne Programmierung, Fokus auf Denkweise.
+Statt nur zu fragen, lass einen **Agenten** die Arbeit machen.
 
-**Tools (Stufe 3):** z. B. Gemini CLI, Claude Code  
+**Szenario:** Euer Kanal braucht regelmäßig frischen Content. Der Agent übernimmt:
+- Aktuelle Trends und Themen recherchieren
+- Post-Entwürfe mit Text, Hashtags und Timing erstellen
+- Zielgruppengerechte Ansprache formulieren, ...
 
-**Prinzip:** Jeder Agent erhält eine Rolle, ein Ziel, klare Verantwortlichkeiten; Kommunikation textbasiert, Ergebnisse werden schrittweise zusammengeführt.
-
----
-
-# 9. GitHub-Repository
-
-**Zweck:** Technische Referenz, didaktische Anleitung, Ausgangspunkt für eigene Experimente.
-
-**Struktur (Auszug):** `docs/` (concept, didactics, architecture), `prompts/` (planner, research, budget, quality, summary), `demo/walkthrough.md`, `visuals/diagrams.md`
+**Warum funktioniert das?**
+- Wiederkehrende, strukturierte Aufgabe mit klaren Regeln
+- Klare Qualitätskriterien (Ton, Stil, Zielgruppe)
+- Agent bleibt in seiner Rolle – arbeitet zuverlässig ab
 
 ---
 
-# Abschluss & Nächste Schritte
+<!-- _class: section-slide section-slide-einordnung -->
 
-**Heute:** Einordnung (KI → LLM → Agent → Multi-Agent), Tool-Landschaft (Browser bis OpenClaw), Demo mit rollenbasierten CLI-Agenten.
+<img class="section-slide-bg" src="../assets/demo.jpg" alt="" />
+<div class="section-slide-content">
+  <h1 class="section-slide-title">KI Agenten in Aktion</h1>
+  <p class="section-slide-subtitle">Geschäftsreiseplanung</p>
+</div>
 
-**Mitnehmen:** Agentische KI = digitales Team mit Rollen und Verantwortung; mehr Autonomie = mehr Nutzen, aber auch mehr Risiken (z. B. Data Leaks).
+---
 
-**Fragen?**
+<!-- _class: tool-stage-slide -->
+
+<div class="tool-stage-content">
+  <h1 class="tool-stage-title">Demo-Szenario: Geschäftsreiseplanung</h1>
+  <p class="tool-stage-examples">Ein agentisches System plant eine <strong>dreitägige Geschäftsreise nach Berlin</strong> – komplett eigenständig.</p>
+  <ul class="tool-stage-list">
+    <li>Reiseoptionen recherchieren (Bahn vs. Flug)</li>
+    <li>Unterkünfte vergleichen (4 Sterne, zentral)</li>
+    <li>Kosten kalkulieren und Budget prüfen</li>
+    <li>Ergebnisse als fertigen Reiseplan aufbereiten</li>
+  </ul>
+  <p class="tool-stage-risks"><strong>Warum eignet sich dieses Szenario?</strong></p>
+  <p class="tool-stage-risks">Wiederkehrende Aufgabe · Kein Spezialwissen nötig · Typischer Büroprozess mit klaren Schritten – perfekter Kandidat für Automatisierung</p>
+</div>
+<div class="tool-stage-figure">
+  <img src="../assets/multiagent-diagram.svg" alt="Multi-Agenten-Fluss: Gesamtziel → Planung → Spezialisten → Ergebnis" />
+</div>
+
+---
+
+<!-- _class: section-slide section-slide-einordnung -->
+
+<img class="section-slide-bg" src="../assets/ausblick.jpg" alt="" />
+<div class="section-slide-content">
+  <h1 class="section-slide-title">Quo vadis?</h1>
+  <p class="section-slide-subtitle">Risiko und Ausblick</p>
+</div>
+
+---
+
+<!-- _class: risk-slide -->
+
+<div class="risk-slide-content">
+  <h1 class="risk-slide-title">Lokale agentische KI: Fallstricke &amp; Schutzmaßnahmen</h1>
+  <p class="risk-slide-lead">Je mehr Autonomie wir lokalen Agenten geben, desto wichtiger werden klare Leitplanken. Drei typische Risikofelder:</p>
+
+  <div class="risk-cards">
+    <div class="risk-card">
+      <div class="risk-card-title">Zugriffe &amp; Rechte</div>
+      <div class="risk-card-text">
+        Agenten können Dateien, Prozesse und externe Dienste steuern.  
+        <strong>Maßnahme:</strong> Nur das Nötige freigeben (Ordner, Tools, Outbound-Kanäle), „Allow all“ vermeiden.
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-card-title">Daten &amp; Vertraulichkeit</div>
+      <div class="risk-card-text">
+        Quellcode, Kundendaten und Secrets können unbemerkt im Kontext landen.  
+        <strong>Maßnahme:</strong> Sensible Daten trennen oder anonymisieren, Secret-Manager nutzen, Logs im Blick behalten.
+      </div>
+    </div>
+    <div class="risk-card">
+      <div class="risk-card-title">Transparenz &amp; Kontrolle</div>
+      <div class="risk-card-text">
+        Nach vielen Schritten ist sonst unklar, was der Agent getan hat.  
+        <strong>Maßnahme:</strong> Aktionen loggen, wichtige Schritte kommentieren, wiederverwendbare Playbooks/Prompts dokumentieren.
+      </div>
+    </div>
+  </div>
+</div>
+
+---
+
+<!-- _class: takeaway-slide -->
+
+# Wichtigsten Take-aways
+
+- **Agentische KI => digitales Team**  
+  KI ist nicht „nur Chatbot“, sondern ein Zusammenspiel spezialisierter Agenten mit klaren Rollen und Verantwortung.
+
+- **Stufen statt Sprung ins kalte Wasser**  
+  Vom Browser bis zu lokalen Agenten – mit jeder Stufe steigen Autonomie, Nutzen **und** Risiko.
+
+- **Multi-Agenten denken in Rollen**  
+  Demo zeigt: Planung, etc. können auf Agenten verteilt und koordiniert werden.
+
+- **Leitplanken sind Pflicht**  
+  Rechte, Zugriffe und Transparenz bewusst gestalten – besonders bei lokalen, stark autonomen Agenten.
+
+---
+
+<!-- _class: closing-slide -->
+
+# Abschluss
+
+**Lust auf mehr deep dives?**  
+Abonniere unseren Kanal und begleite uns bei weiteren Sessions, Demos und Deep Dives.
+
+<ul class="closing-social-links">
+  <li>
+    <a href="https://www.youtube.com/@GreweJ%C3%A4ger">
+      <svg class="social-icon social-icon-youtube" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M10 9.5v5l4-2.5-4-2.5z" fill="currentColor"/>
+        <path d="M21.8 8.3s-.2-1.5-.8-2.1c-.7-.8-1.6-.8-2-0.9C16.4 5 12 5 12 5h0s-4.4 0-7 .3c-.4.1-1.3.1-2 0.9-.6.6-.8 2.1-.8 2.1S2 10 2 11.7v1.6c0 1.7.2 3.4.2 3.4s.2 1.5.8 2.1c.7.8 1.7.8 2.2.9 1.6.2 6.8.3 6.8.3s4.4 0 7-.3c.4-.1 1.3-.1 2-0.9.6-.6.8-2.1.8-2.1s.2-1.7.2-3.4v-1.6c0-1.7-.2-3.4-.2-3.4z" fill="currentColor"/>
+      </svg>
+      <span>Der Akademiker &amp; Der Hauptschüler (YouTube)</span>
+    </a>
+  </li>
+  <li>
+    <a href="https://github.com/akademiker-und-hauptschueler">
+      <svg class="social-icon social-icon-github" viewBox="0 0 24 24" aria-hidden="true">
+        <path fill="currentColor" d="M12 .5C5.65.5.5 5.65.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2c-3.2.7-3.9-1.5-3.9-1.5-.5-1.1-1.2-1.4-1.2-1.4-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.5.1 1.7.1.2-.8.6-1.3 1-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.2-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2.9-.3 1.8-.4 2.7-.4.9 0 1.8.1 2.7.4 2.2-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.9 1.2 1.9 1.2 3.2 0 4.5-2.7 5.5-5.3 5.8.6.5 1.1 1.4 1.1 2.7v4c0 .3.2.7.8.6 4.6-1.5 7.9-5.9 7.9-10.9C23.5 5.65 18.35.5 12 .5z"/>
+      </svg>
+      <span>Code &amp; Slides auf GitHub @akademiker-und-hauptschueler</span>
+    </a>
+  </li>
+</ul>
+
+**Call to action:**  
+Probier eine Stufe selbst aus – ob Browser, IDE oder CLI. Starte klein und schau, wie sich dein „digitales Team“ anfühlt.
+
+<img class="closing-logo" src="../assets/logo.png" alt="Der Akademiker &amp; der Hauptschüler Logo" />
+

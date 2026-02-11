@@ -1,13 +1,14 @@
 {
-    "name": "agentic-ai-marp",
-    "private": true,
-    "type": "module",
-    "devDependencies": {
-        "@marp-team/marp-cli": "^4.2.3"
-    },
-    "scripts": {
-        "preview": "marp slides --watch",
-        "build:pdf": "marp slides -o dist/presentation.pdf",
-        "build:html": "marp slides --html -o dist/presentation.html"
-    }
+  "name": "agentic-ai-marp",
+  "private": true,
+  "type": "module",
+  "devDependencies": {
+    "@marp-team/marp-cli": "^4.2.3"
+  },
+  "scripts": {
+    "preview": "marp slides/presentation.md --html --watch",
+    "build:pdf": "marp slides/presentation.md --html --no-stdin -o dist/presentation.pdf",
+    "build:html": "marp slides/presentation.md --html --no-stdin -o dist/presentation.html",
+    "diagram": "npx @mermaid-js/mermaid-cli mmdc -i assets/multiagent-diagram.mmd -o assets/multiagent-diagram.svg"
+  }
 }
